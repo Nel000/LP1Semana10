@@ -19,6 +19,9 @@ namespace PlayerManager3
         public void Run()
         {
             string input;
+
+            playerList.Sort();
+            
             do
             {
                 Console.WriteLine("Menu");
@@ -48,7 +51,7 @@ namespace PlayerManager3
                         break;
                 }
                 Console.WriteLine("Press any key to continue...");
-                Console.ReadKey();
+                Console.Read();
             }
             while (input != "E");
         }
@@ -64,6 +67,7 @@ namespace PlayerManager3
             score = Convert.ToInt32(Console.ReadLine());
 
             playerList.Add(new Player(name, score));
+            playerList.Sort();
         }
 
         private void ShowPlayers(IEnumerable<Player> playerCollection)
