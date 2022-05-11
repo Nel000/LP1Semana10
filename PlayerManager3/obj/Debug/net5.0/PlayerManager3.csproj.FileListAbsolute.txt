@@ -1,0 +1,16 @@
+D:\Repos\Uni\lp1_2022\LP1Semana10\PlayerManager3\obj\Debug\net5.0\PlayerManager3.csproj.AssemblyReference.cache
+D:\Repos\Uni\lp1_2022\LP1Semana10\PlayerManager3\obj\Debug\net5.0\PlayerManager3.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repos\Uni\lp1_2022\LP1Semana10\PlayerManager3\obj\Debug\net5.0\PlayerManager3.AssemblyInfoInputs.cache
+D:\Repos\Uni\lp1_2022\LP1Semana10\PlayerManager3\obj\Debug\net5.0\PlayerManager3.AssemblyInfo.cs
+D:\Repos\Uni\lp1_2022\LP1Semana10\PlayerManager3\obj\Debug\net5.0\PlayerManager3.csproj.CoreCompileInputs.cache
+D:\Repos\Uni\lp1_2022\LP1Semana10\PlayerManager3\bin\Debug\net5.0\PlayerManager3.exe
+D:\Repos\Uni\lp1_2022\LP1Semana10\PlayerManager3\bin\Debug\net5.0\PlayerManager3.deps.json
+D:\Repos\Uni\lp1_2022\LP1Semana10\PlayerManager3\bin\Debug\net5.0\PlayerManager3.runtimeconfig.json
+D:\Repos\Uni\lp1_2022\LP1Semana10\PlayerManager3\bin\Debug\net5.0\PlayerManager3.runtimeconfig.dev.json
+D:\Repos\Uni\lp1_2022\LP1Semana10\PlayerManager3\bin\Debug\net5.0\PlayerManager3.dll
+D:\Repos\Uni\lp1_2022\LP1Semana10\PlayerManager3\bin\Debug\net5.0\ref\PlayerManager3.dll
+D:\Repos\Uni\lp1_2022\LP1Semana10\PlayerManager3\bin\Debug\net5.0\PlayerManager3.pdb
+D:\Repos\Uni\lp1_2022\LP1Semana10\PlayerManager3\obj\Debug\net5.0\PlayerManager3.dll
+D:\Repos\Uni\lp1_2022\LP1Semana10\PlayerManager3\obj\Debug\net5.0\ref\PlayerManager3.dll
+D:\Repos\Uni\lp1_2022\LP1Semana10\PlayerManager3\obj\Debug\net5.0\PlayerManager3.pdb
+D:\Repos\Uni\lp1_2022\LP1Semana10\PlayerManager3\obj\Debug\net5.0\PlayerManager3.genruntimeconfig.cache
