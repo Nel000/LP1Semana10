@@ -7,8 +7,6 @@ namespace PlayerManager4
     {
         private List<Player> playerList;
 
-        private IComparer<Player> comp = new CompareByName(true);
-
         public Program()
         {
             playerList = new List<Player>()
@@ -22,7 +20,7 @@ namespace PlayerManager4
         {
             string input;
 
-            playerList.Sort(comp);
+            //playerList.Sort(comp);
             
             do
             {
@@ -41,7 +39,7 @@ namespace PlayerManager4
                         InsertPlayer();
                         break;
                     case "2":
-                        ShowPlayers(playerList);
+                        DefineOrderList(playerList);
                         break;
                     case "3":
                         ShowPlayersWithScore();
@@ -69,7 +67,47 @@ namespace PlayerManager4
             score = Convert.ToInt32(Console.ReadLine());
 
             playerList.Add(new Player(name, score));
-            playerList.Sort(comp);
+            //playerList.Sort(comp);
+        }
+
+        private void DefineOrderList(IEnumerable<Player> playerCollection)
+        {
+            IComparer<Player> comp;
+
+            string input;
+
+            bool showing = true;
+
+            do
+            {
+                Console.WriteLine("1. List by score");
+                Console.WriteLine("2. List alphabetically, ascending");
+                Console.WriteLine("3. List alphabetically, descending");
+                input = Console.ReadLine();
+                switch (input)
+                {
+                    case "1":
+                        playerList.Sort();
+                        showing = false;
+                        break;
+                    case "2":
+                        comp = new CompareByName(true);
+                        playerList.Sort(comp);
+                        showing = false;
+                        break;
+                    case "3":
+                        comp = new CompareByName(false);
+                        playerList.Sort(comp);
+                        showing = false;
+                        break;
+                    default:
+                        Console.WriteLine("!!! Unknown option !!!");
+                        break;
+                }
+            }
+            while (showing);
+
+            ShowPlayers(playerCollection);
         }
 
         private void ShowPlayers(IEnumerable<Player> playerCollection)
