@@ -7,6 +7,8 @@ namespace PlayerManager4
     {
         private List<Player> playerList;
 
+        private IComparer<Player> comp = new CompareByName(true);
+
         public Program()
         {
             playerList = new List<Player>()
@@ -20,7 +22,7 @@ namespace PlayerManager4
         {
             string input;
 
-            playerList.Sort();
+            playerList.Sort(comp);
             
             do
             {
@@ -67,7 +69,7 @@ namespace PlayerManager4
             score = Convert.ToInt32(Console.ReadLine());
 
             playerList.Add(new Player(name, score));
-            playerList.Sort();
+            playerList.Sort(comp);
         }
 
         private void ShowPlayers(IEnumerable<Player> playerCollection)
