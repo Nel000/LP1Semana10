@@ -19,8 +19,6 @@ namespace PlayerManager4
         public void Run()
         {
             string input;
-
-            //playerList.Sort(comp);
             
             do
             {
@@ -67,7 +65,6 @@ namespace PlayerManager4
             score = Convert.ToInt32(Console.ReadLine());
 
             playerList.Add(new Player(name, score));
-            //playerList.Sort(comp);
         }
 
         private void DefineOrderList(IEnumerable<Player> playerCollection)
