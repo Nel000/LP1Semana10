@@ -24,6 +24,29 @@ namespace StringCollections
                 testQueue.Enqueue(testStrings[i]);
                 testHash.Add(testStrings[i]);
             }
+
+            Console.WriteLine("Strings in list:");
+
+            foreach (string s in testList)
+                Console.WriteLine($"- {s}");
+
+            Console.WriteLine();
+            Console.WriteLine("Strings in stack:");
+
+            foreach (string s in testStack)
+                Console.WriteLine($"- {s}");
+
+            Console.WriteLine();
+            Console.WriteLine("Strings in queue:");
+
+            foreach (string s in testQueue)
+                Console.WriteLine($"- {s}");
+
+            Console.WriteLine();
+            Console.WriteLine("Strings in hash set:");
+
+            foreach (string s in testHash)
+                Console.WriteLine($"- {s}");
         }
     }
 }
